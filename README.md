@@ -1,7 +1,13 @@
-# Live: https://adnan-tech-foring-task.netlify.app/
+ # Instructions:
+   How to run:
+      step 1: npm install
+      step 2: npm start
+ 
+ # Project Link
+ * Live: https://adnan-tech-foring-task.netlify.app/
 
-# Frontend: https://github.com/AdnanTurjoy/Frontend-React-MUI-Tech-Foring
-# backend: https://github.com/AdnanTurjoy/backend-tech-foring
+ *Frontend: https://github.com/AdnanTurjoy/Frontend-React-MUI-Tech-Foring
+ *backend: https://github.com/AdnanTurjoy/backend-tech-foring
 
 # Task:
    * a login and registration page
