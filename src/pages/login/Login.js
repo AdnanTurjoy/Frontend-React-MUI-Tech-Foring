@@ -32,13 +32,10 @@ export default function Login() {
     //
     //http://localhost:5000/api/user/login
     await axios
-      .post(
-        `https://backend-tech-foring-production.up.railway.app/api/user/login`,
-        {
-          email,
-          password,
-        }
-      )
+      .post(`https://backend-tech-foring.onrender.com/api/user/login`, {
+        email,
+        password,
+      })
       .then((res) => {
         setToken(res.data.token);
         localStorage.setItem("token", res.data.token);
@@ -55,9 +52,9 @@ export default function Login() {
         }, 3000);
       });
 
-//http://localhost:5000/api/user/jwt-token
+    //http://localhost:5000/api/user/jwt-token
     await axios
-      .post(`https://backend-tech-foring-production.up.railway.app/api/user/jwt-token`, {
+      .post(`https://backend-tech-foring.onrender.com/api/user/jwt-token`, {
         token: localStorage.getItem("token"),
       })
       .then((res) => {

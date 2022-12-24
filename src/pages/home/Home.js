@@ -19,7 +19,7 @@ export default function Home() {
   useEffect(() => {
     // http://localhost:5000/api/job/
     axios
-      .get("https://backend-tech-foring-production.up.railway.app/api/job/")
+      .get("https://backend-tech-foring.onrender.com/api/job/")
       .then((res) => {
         setJobs(res.data);
       });
@@ -36,9 +36,7 @@ export default function Home() {
   const handleDelete = (id) => {
     //http://localhost:5000/api/job/delete/${id}
     axios
-      .delete(
-        `https://backend-tech-foring-production.up.railway.app/api/job/delete/${id}`
-      )
+      .delete(`https://backend-tech-foring.onrender.com/api/job/delete/${id}`)
       .then((res) => {
         navigate("/");
         console.log(res);

@@ -21,17 +21,14 @@ export default function Job() {
 
     //http://localhost:5000/api/job/addjob
     axios
-      .post(
-        `https://backend-tech-foring-production.up.railway.app/api/job/addjob`,
-        {
-          name,
-          overview,
-          responsibility,
-          requirement,
-          category,
-          salary,
-        }
-      )
+      .post(`https://backend-tech-foring.onrender.com/api/job/addjob`, {
+        name,
+        overview,
+        responsibility,
+        requirement,
+        category,
+        salary,
+      })
       .then((res) => {
         navigate("/");
       })

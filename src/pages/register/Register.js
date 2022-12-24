@@ -29,14 +29,11 @@ export default function Register() {
 
     // http://localhost:5000/api/user/register
     axios
-      .post(
-        `https://backend-tech-foring-production.up.railway.app/api/user/register`,
-        {
-          name,
-          email,
-          password,
-        }
-      )
+      .post(`https://backend-tech-foring.onrender.com/api/user/register`, {
+        name,
+        email,
+        password,
+      })
       .then((res) => {
         navigate("/login");
       })

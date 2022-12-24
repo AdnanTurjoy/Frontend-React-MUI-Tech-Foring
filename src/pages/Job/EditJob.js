@@ -32,7 +32,7 @@ export default function EditJob() {
 
     axios
       .put(
-        `https://backend-tech-foring-production.up.railway.app/api/job/edit/${location.state.categoryWize._id}`,
+        `https://backend-tech-foring.onrender.com/api/job/edit/${location.state.categoryWize._id}`,
         {
           name,
           overview,
